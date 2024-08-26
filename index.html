@@ -17,61 +17,189 @@
   font-style: normal;
 }
     </style>
+    <script src="https://kit.fontawesome.com/3b0454527a.js" crossorigin="anonymous"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              darkg: '#ABEF5F',
+              dark7: '#737373',
+              dark4: '#494949',
+              dark2: '#212121',
+              darkall: '#1E1E1E',
+            }
+          }
+        }
+      }
+    </script>
 </head>
 <body class="manrope-font">
     <!-- header section start here -->
-    <header class="container mx-auto">
-        <!-- nav section start here -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
-                    </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Home</a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost text-4xl font-bold">Rinterio</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1 text-base">
-                    <li><a><span class="font-extrabold">Home</span></a></li>
-                    <li><a>Services</a></li>
-                    <li><a>Portfolio</a></li>
-                    <li><a>Blogs</a></li>
-                    <li><a>Contact</a></li>
-                  </ul>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn font-extrabold">Book Consult</a>
-                </div>
+     <header class="container mx-auto">
+      <!-- nav section -->
+       <nav>
+        <div class="navbar bg-base-100 container mx-auto">
+          <div class="navbar-start">
+            <img class="h-10 w-10 bg-darkg rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt="">
+            <h1 class="font-bold text-4xl"><a>Rinterio</a></h1>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact</a></li>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+              <div class="navbar-end hidden lg:flex gap-2">
+                <h6>Icon</h6>
+                <h6>Icon</h6>
+                <a class="btn">Button</a>
               </div>
-        </nav>
-        <!-- nav section end here -->
-    </header>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+        </div>
+       </nav>
+       <!-- hero section -->
+        <!-- <section> -->
+          <div class="flex flex-col items-center justify-center max-w-6xl">
+            <div class="mx-auto">
+              <img src="Images/banner.png" alt="">
+            </div>
+            <div class="flex flex-col items-center">
+              <h1 class="text-5xl font-extrabold text-dark2 w-full">A barn house of this design has a striking appearance</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+              <button class="btn bg-darkg rounded-full self-center">View Details
+                <img class="h-6 w-6 bg-green-150 rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </section>
+     </header>
     <!-- header section end here -->
 
      <!-- main section start here -->
-    <main></main>
+    <main>
+  
+      <!-- article section -->
+      <section class="mt-24 py-9 w-full bg-[#F4F4F4]">
+        <div class="m-14">
+          <div class="flex justify-center m-10">
+            <button class="bg-darkg rounded-full p-3 mb-3"
+            ><i class="fa-solid fa-arrow-right mr-1"></i>Rinterio News</button></div>
+          <h1 class="text-4xl font-extrabold text-center mb-6">Read Our Articles and News</h1>
+          <p class="text-center mb-8 p-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <div class="grid grid-cols-1 gap-9 md:grid-cols-2 lg:grid-cols-3">
+            <!-- card-1 -->
+            <div class="card bg-base-100 w-90 shadow-xl space-y-10 p-5">
+              <figure>
+                <img src="Images/article1.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-xl font-extrabold text-dark4">How to choose the furniture right  of your home.</h2>
+                <p class="font-medium text-base text-dark7">The barn house captivates with its blend of rustic charm and modern. </p>
+                <div class="card-actions justify-start">
+                    <button class="btn bg-opacity-0 pl-0 ml-0">Read More
+                      <img class="w-6 h-6 bg-darkg rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <!-- card-2 -->
+            <div class="card bg-base-100 w-90 shadow-xl space-y-5 p-2">
+              <figure>
+                <img src="Images/article2.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-xl font-extrabold text-dark4">How to make the proper choice of your home.</h2>
+                <p class="font-medium text-base text-dark7">The proper deccission makes your home very beautiful. </p>
+                <div class="card-actions justify-start">
+                    <button class="btn bg-opacity-0 pl-0 ml-0">Read More
+                      <img class="w-6 h-6 bg-darkg rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+            <!-- card-3 -->
+            <div class="card bg-base-100 w-90 shadow-xl space-y-5 p-2">
+              <figure>
+                <img src="Images/article3.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-xl font-extrabold text-dark4">How to make yoour home very nice with great furniture.</h2>
+                <p class="font-medium text-base text-dark7">The furniture of our shop are very nice and comfortable. </p>
+                <div class="card-actions justify-start">
+                    <button class="btn bg-opacity-0 pl-0 ml-0">Read More
+                      <img class="w-6 h-6 bg-darkg rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- next project section -->
+      <section class="bg-[url('Images/bg.jpg')] bg-cover bg-center w-full py-12 mt-2 mb-15">
+        <div class="my-5 mx-auto">
+          <div class="flex justify-center">
+            <button class="bg-darkg rounded-full p-3 mb-3"
+            ><i class="fa-solid fa-arrow-right mr-1"></i>Let's Connect</button></div>
+          <h1 class="text-4xl font-extrabold text-center mb-4">Let’s Discuss Next Project</h1>
+          <p class="text-center mb-8 p-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <!-- input field -->
+          <div class="grid items-center justify-center gap-5 w-full my-10 mx-auto md:grid-cols-2 md:w-2/3">
+              <input type="text" placeholder="First Name*" class="input input-bordered rounded-full w-full sm:block"/>
+            <input type="text" placeholder="Last Name*" class="input input-bordered rounded-full w-full" />
+            <input type="number" placeholder="Phone Number*" class="input input-bordered rounded-full w-full" />
+            <input type="text" placeholder="Email Address*" class="input input-bordered rounded-full w-full" />
+              <textarea class="textarea textarea-bordered w-full h-60 rounded-xl col-span-2" placeholder="Write your message here"></textarea>
+            <input type="submit" placeholder="Email Address*" class="input input-bordered rounded-full w-full" />
+              
+              <img class="w-8 h-8 bg-darkg" src="Images/arrow-up-right-svgrepo-com.svg" alt="">
+              </div>
+            </div>
+            
+        </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+      
+
+    </main>
     <!-- main section end here -->
 
      <!-- footer section start here -->
