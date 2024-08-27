@@ -38,71 +38,67 @@
 <body class="manrope-font">
     <!-- header section start here -->
      <header class="container mx-auto">
-      <!-- nav section -->
-       <nav>
-        <div class="navbar bg-base-100 container mx-auto">
+      <nav>
+        <div class="navbar bg-base-100">
           <div class="navbar-start">
-            <img class="h-10 w-10 bg-darkg rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt="">
-            <h1 class="font-bold text-4xl"><a>Rinterio</a></h1>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li><a>Home</a></li>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                <li><a>Home</a></li>
                 <li><a>Services</a></li>
                 <li><a>Portfolio</a></li>
                 <li><a>Blogs</a></li>
                 <li><a>Contact</a></li>
-              </li>
-            </ul>
-          </div>
-          
-          <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-              <div class="navbar-end hidden lg:flex gap-2">
-                <h6>Icon</h6>
-                <h6>Icon</h6>
-                <a class="btn">Button</a>
-              </div>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-              <li><a>Home</a></li>
+            <a class="btn btn-ghost text-4xl font-extrabold text-dark2"><img class="w-8 h-8 bg-darkg rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt="">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>
+                <span class="text-dark4">Home</span>
+              </a></li>
               <li><a>Services</a></li>
               <li><a>Portfolio</a></li>
               <li><a>Blogs</a></li>
               <li><a>Contact</a></li>
-            </ul>
+              </ul>
+          </div>
+          <div class="navbar-end hidden lg:flex gap-4">
+            <h6><i class="fa-solid fa-magnifying-glass"></i></h6>
+            <h6><i class="fa-solid fa-cart-shopping"></i></h6>
+            <button class="btn bg-darkg rounded-2xl p-3 m-3">Book Consult
+              <img class="w-6 h-6 rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt=""></button>
           </div>
         </div>
-       </nav>
-       <!-- hero section -->
-        <!-- <section> -->
-          <div class="flex flex-col items-center justify-center max-w-6xl">
-            <div class="mx-auto">
-              <img src="Images/banner.png" alt="">
-            </div>
-            <div class="flex flex-col items-center">
-              <h1 class="text-5xl font-extrabold text-dark2 w-full">A barn house of this design has a striking appearance</h1>
-              <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-              <button class="btn bg-darkg rounded-full self-center">View Details
-                <img class="h-6 w-6 bg-green-150 rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt="">
-              </button>
-            </div>
+      </nav>
+      <section class="container mx-auto">
+        <div class="">
+          <img class="container mx-auto w-2/4 mb-4" src="Images/banner.png" alt="">
+        </div>
+        <div class="w-2/3 mx-auto">
+          <h1 class="text-dark2 text-6xl font-extrabold text-center mb-6">A barn house of this design has a striking appearance</h1>
+          <p class="text-dark4 text-base font-medium text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <div class="flex justify-center">
+            <button class="btn bg-darkg rounded-2xl p-3 m-3">Book Consult
+              <img class="w-6 h-6 rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt=""></button>
           </div>
-        </section>
+        </div>
+      </section>
      </header>
     <!-- header section end here -->
 
@@ -113,7 +109,7 @@
       <section class="mt-24 py-9 w-full bg-[#F4F4F4] container mx-auto">
         <div class="grid grid-cols-1 w-11/12 container mx-auto justify-center items-center gap-5 md:grid-cols-2">
           <!-- content and card section -->
-           <div class="justify-center">
+           <div class="">
             <div class="flex justify-start">
               <button class="bg-[#FFFFFF] rounded-full p-3 mx-8"
               ><i class="fa-solid fa-arrow-right mr-1"></i>Rinterio News</button></div>
@@ -123,7 +119,7 @@
               <div>
                 <div class="flex gap-5 justify-center items-center bg-[#FFFFFF] rounded-xl shadow-xl w-11/12 m-3 p-8">
                   <div>
-                    <img class="w-full bg-cover justify-center" src="Images/commercial.png" alt="">
+                    <img class="w-1/2" src="Images/commercial.png" alt="">
                   </div>
                   <div>
                   <h3 class="text-lg font-extrabold text-dark4">Commercial</h3>
@@ -142,14 +138,72 @@
               </div>
            </div>
           <!-- img section -->
-           <div>
+           <div class="w-2/3">
             <img src="Images/Rectangle.png" alt="">
            </div>
         </div>
       </section>
 
       <!-- Work Section -->
-       <section></section>
+       <section class="py-9 w-full bg-[#F4F4F4]">
+        <div class="flex justify-center m-5">
+          <button class="bg-white rounded-full p-3 mb-1"
+          ><i class="fa-solid fa-arrow-right mr-1"></i>How We Works</button>
+        </div>
+        <h1 class="text-4xl font-extrabold text-center mb-4">Our Works Process</h1>
+        <p class="text-center mb-4 p-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <!-- card-1 -->
+        <div class="grid grid-cols-1 mx-12 gap-5 lg:grid-cols-4">
+          <div class="bg-[#E7C1D3] w-80 p-8 rounded-xl">
+            <img class="mb-2" src="Images/concept.png" alt="">
+            <h3 class="text-xl text-[#1C1C1C] font-bold mb-2">Concept</h3>
+            <p class="text-base text-dark4 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <!-- card-2 -->
+          <div class="bg-[#EFDA6E] w-80 p-8 rounded-xl">
+            <img class="mb-2" src="Images/flow-chart.png" alt="">
+            <h3 class="text-xl text-[#1C1C1C] font-bold mb-2">Design Process</h3>
+            <p class="text-base text-dark4 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <!-- card-3 -->
+          <div class="bg-[#A4DAC3] w-80 p-8 rounded-xl">
+            <img class="mb-2" src="Images/vision.png" alt="">
+            <h3 class="text-xl text-[#1C1C1C] font-bold mb-2">Supervision</h3>
+            <p class="text-base text-dark4 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+          <!-- card-4 -->
+          <div class="bg-[#77AAEA] w-80 p-8 rounded-xl">
+            <img class="mb-2" src="Images/budget-planning.png" alt="">
+            <h3 class="text-xl text-[#1C1C1C] font-bold mb-2">Budget Planning</h3>
+            <p class="text-base text-dark4 font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+       </section>
+
+       <!-- challenge-section -->
+        <section>
+          <div class="flex justify-center m-5">
+            <button class="bg-darkg rounded-full p-2 mb-1"
+            ><i class="fa-solid fa-arrow-right mr-1"></i>Explore Our Latest News</button></div>
+          <h1 class="text-4xl font-extrabold text-center mb-4">Our Latest Portfolio</h1>
+          <p class="text-center mb-8 p-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <!-- challenge card -->
+           <div>
+            <!-- card-1 -->
+             <div class="grid grid-cols-1 lg:grid-cols-4">
+              <div class="grid grid-rows-1 gap-5 border p-6 mx-10 lg:flex">
+                <img class="mb-2" src="Images/img1.png" alt="">
+                <div><h3 class="font-extrabold text-2xl text-dark4 mb-2">Commercial</h3>
+                  <p class="text-base font-medium text7 mb-2">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                  <div class="card-actions justify-start">
+                    <button class="btn bg-opacity-0 pl-0 ml-0">Read More
+                      <img class="w-6 h-6 bg-darkg rounded-full" src="Images/arrow-up-right-svgrepo-com.svg" alt=""></button>
+                </div>
+                 </div>
+                </div>
+             </div>
+           </div>
+        </section>
 
 
       <!-- article section -->
